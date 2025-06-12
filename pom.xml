@@ -303,7 +303,7 @@
 			</plugin>
 			<!--# Changes for Software Composition Analysis Scan using Snyk
 #By ASecurityGuru
--->
+
     <plugin>
       <groupId>io.snyk</groupId>
       <artifactId>snyk-maven-plugin</artifactId>
@@ -312,8 +312,7 @@
       <configuration>
         <org>asecurityguru</org>
       </configuration>
-    </plugin>
-<!-- Snyk Changes for SCA Ends Here -->
+    </plugin> -->
 		</plugins>
 		<pluginManagement>
 			<plugins>
