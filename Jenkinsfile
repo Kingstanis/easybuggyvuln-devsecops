@@ -4,19 +4,9 @@ pipeline {
         maven 'maven'  
     }
    stages{
-	   stage('Maven Build Stage') {
-		   steps {
-			   sh 'mvn install'
-			   }
-		   }
-	   stage('Testing Stage') {
-		   steps {
-			   sh 'mvn test'
-			   }
-		   }
 	   stage('OWASP Dependency Check - SCA') {
 		   steps {
-			   sh 'mvn verify -fn'
+			   sh 'mvn clean verify -fn'
 			   }
 		   }
 	   stage('SonarAnalysis - SAST') {
