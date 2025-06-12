@@ -6,7 +6,7 @@ pipeline {
    stages{
 	   stage('Build Stage') {
 		   steps {
-			   sh 'mvn clean build'
+			   sh 'mvn clean install'
 			   }
 		   }
 	   stage('SonarAnalysis - SAST') {
